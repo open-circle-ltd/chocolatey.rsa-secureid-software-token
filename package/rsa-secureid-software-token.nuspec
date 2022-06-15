@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rsa-secureid-software-token</id>
+    <version>5.0.3</version>
+    <packageSourceUrl>https://github.com/open-circle-ltd/chocolatey.rsa-secureid-software-token</packageSourceUrl>
+    <owners>Benaiah Matthew Catherasoo, Open Circle AG</owners>
+    <title>rsa-secureid-software-token</title>
+    <authors>RSA Security LLC</authors>
+    <projectUrl>https://community.securid.com/</projectUrl>
+    <iconUrl>https://community.securid.com/html/assets/securid/securid-an-rsa-business-513x139.png</iconUrl>
+    <copyright>2022 RSA Security LLC</copyright>
+    <projectSourceUrl>https://community.securid.com/t5/securid-software-token-for/rsa-securid-software-token-5-0-2-downloads-for-microsoft-windows/ta-p/565936</projectSourceUrl>
+    <docsUrl>https://community.securid.com/t5/securid-software-token-for/tkb-p/securid-software-token-microsoft-windows</docsUrl>
+    <tags>rsa-secureid-software-token RSA SecureID Software-Token</tags>
+    <summary>RSA SecurID, formerly referred to as SecurID, is a mechanism developed by RSA for performing two-factor authentication for a user to a network resource.</summary>
+    <description>RSA SecurID, formerly referred to as SecurID, is a mechanism developed by RSA for performing two-factor authentication for a user to a network resource.</description>
+    <releaseNotes>https://community.securid.com/t5/securid-software-token-for/rsa-securid-software-token-5-0-3-for-microsoft-windows-release/ta-p/627168</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

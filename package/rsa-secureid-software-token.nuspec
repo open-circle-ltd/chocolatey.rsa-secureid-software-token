@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rsa-secureid-software-token</id>
-    <version>5.0.3</version>
+    <version>5.0.3.1</version>
     <packageSourceUrl>https://github.com/open-circle-ltd/chocolatey.rsa-secureid-software-token</packageSourceUrl>
     <owners>Benaiah Matthew Catherasoo, Open Circle AG</owners>
     <title>rsa-secureid-software-token</title>
@@ -14,7 +14,20 @@
     <docsUrl>https://community.securid.com/t5/securid-software-token-for/tkb-p/securid-software-token-microsoft-windows</docsUrl>
     <tags>rsa-secureid-software-token RSA SecureID Software-Token</tags>
     <summary>RSA SecurID, formerly referred to as SecurID, is a mechanism developed by RSA for performing two-factor authentication for a user to a network resource.</summary>
-    <description>RSA SecurID, formerly referred to as SecurID, is a mechanism developed by RSA for performing two-factor authentication for a user to a network resource.</description>
+    <description>RSA SecurID, formerly referred to as SecurID, is a mechanism developed by RSA for performing two-factor authentication for a user to a network resource.
+      ## Package Parameters
+      Command-line options for installer configuration. See the [official page](https://community.securid.com/t5/securid-knowledge-base/installing-the-same-rsa-securid-software-token-5-0-for-windows/ta-p/1288) for details and defaults.
+      
+      - `/SETCOPYPROTECTION:OPTION` to remove the binding of the token to the specific machine on which the token is imported; and thus to be able to find it on any other machine.
+      - `/SETSINGLEDATABASE:OPTION` to remove the binding of the token to the specific user accessing the machine.  The installation is still secured as the token is stored in the home drive of each user and cannot be accessed by any other user.
+      - `/SETDATABASEDIR:OPTION` to install the database containing the user’s software token to a location other than the default directory.
+
+      ### Examples
+      `choco install webex --params "/SETCOPYPROTECTION:TRUE"`
+      `choco install webex --params "/SETCOPYPROTECTION:TRUE /SETSINGLEDATABASE:FALSE"`
+      `choco install webex --params "/SETCOPYPROTECTION:TRUE /SETSINGLEDATABASE:TRUE /SETDATABASEDIR:%AppData%\RSA"`
+
+    </description>
     <releaseNotes>https://community.securid.com/t5/securid-software-token-for/rsa-securid-software-token-5-0-3-for-microsoft-windows-release/ta-p/627168</releaseNotes>
   </metadata>
   <files>

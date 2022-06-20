@@ -23,9 +23,9 @@
       - `/SETDATABASEDIR:OPTION` to install the database containing the user’s software token to a location other than the default directory.
 
       ### Examples
-      `choco install webex --params "/SETCOPYPROTECTION:TRUE"`
-      `choco install webex --params "/SETCOPYPROTECTION:TRUE /SETSINGLEDATABASE:FALSE"`
-      `choco install webex --params "/SETCOPYPROTECTION:TRUE /SETSINGLEDATABASE:TRUE /SETDATABASEDIR:%AppData%\RSA"`
+      `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:TRUE"`
+      `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:TRUE /SETSINGLEDATABASE:FALSE"`
+      `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:TRUE /SETSINGLEDATABASE:TRUE /SETDATABASEDIR:%AppData%\RSA"`
 
     </description>
     <releaseNotes>https://community.securid.com/t5/securid-software-token-for/rsa-securid-software-token-5-0-3-for-microsoft-windows-release/ta-p/627168</releaseNotes>

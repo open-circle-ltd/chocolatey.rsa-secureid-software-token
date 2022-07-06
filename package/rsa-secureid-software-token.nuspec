@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rsa-secureid-software-token</id>
-    <version>5.0.3.1</version>
+    <version>5.0.3.3</version>
     <packageSourceUrl>https://github.com/open-circle-ltd/chocolatey.rsa-secureid-software-token</packageSourceUrl>
     <owners>Benaiah Matthew Catherasoo, Open Circle AG</owners>
     <title>rsa-secureid-software-token</title>
@@ -23,9 +23,9 @@
       - `/SETDATABASEDIR:OPTION` to install the database containing the user’s software token to a location other than the default directory.
 
       ### Examples
-      `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:TRUE"`
-      `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:TRUE /SETSINGLEDATABASE:FALSE"`
-      `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:TRUE /SETSINGLEDATABASE:TRUE /SETDATABASEDIR:%AppData%\RSA"`
+      `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:FALSE"`
+      `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:FALSE /SETSINGLEDATABASE:FALSE"`
+	    `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:FALSE /SETSINGLEDATABASE:TRUE /SETDATABASEDIR:<DRIVE_LETTER>\<PATH>"`
 
     </description>
     <releaseNotes>https://community.securid.com/t5/securid-software-token-for/rsa-securid-software-token-5-0-3-for-microsoft-windows-release/ta-p/627168</releaseNotes>

@@ -5,10 +5,12 @@ $ziplocation = "$toolsDir\unzip"
 
 $url      = 'https://download.rsa.com/tokens/windows/RSASecurIDSoftwareToken5.0.3x64.zip' 
 
+$pp = Get-PackageParameters
+
 $sa = ""
-$sa += if($pp.SETCOPYPROTECTION) { ' SETCOPYPROTECTION="' + $pp.SETCOPYPROTECTION}
-$sa += if($pp.SETSINGLEDATABASE) { ' SETSINGLEDATABASE="' + $pp.SETSINGLEDATABASE}
-$sa += if($pp.SETDATABASEDIR) { ' SETDATABASEDIR="' + $pp.SETDATABASEDIR}
+$sa += if($pp.SETCOPYPROTECTION) { ' SETCOPYPROTECTION=' + $pp.SETCOPYPROTECTION}
+$sa += if($pp.SETSINGLEDATABASE) { ' SETSINGLEDATABASE=' + $pp.SETSINGLEDATABASE}
+$sa += if($pp.SETDATABASEDIR) { ' SETDATABASEDIR=' + $pp.SETDATABASEDIR}
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -16,7 +18,7 @@ $packageArgs = @{
   fileType      = 'MSI' 
   file         = "$fileLocation\RSASecurIDToken503x64.msi"
   softwareName  = 'rsa-secureid-software-token*' 
-  silentArgs    = "$sa /qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+  silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`"$sa"
   validExitCodes= @(0, 3010, 1641)
 }
 

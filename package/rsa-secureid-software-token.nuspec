@@ -25,7 +25,7 @@
       ### Examples
       `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:FALSE"`
       `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:FALSE /SETSINGLEDATABASE:FALSE"`
-	    `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:FALSE /SETSINGLEDATABASE:TRUE /SETDATABASEDIR:<DRIVE_LETTER>\<PATH>"`
+      `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:FALSE /SETSINGLEDATABASE:TRUE /SETDATABASEDIR:<DRIVE_LETTER>\<PATH>"`
 
     </description>
     <releaseNotes>https://community.securid.com/t5/securid-software-token-for/rsa-securid-software-token-5-0-3-for-microsoft-windows-release/ta-p/627168</releaseNotes>

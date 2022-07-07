@@ -11,9 +11,9 @@ Command-line options for installer configuration. See the [official page](https:
 - `/SETDATABASEDIR:OPTION` to install the database containing the user’s software token to a location other than the default directory.
 
 ### Examples
-`choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:TRUE"` <br>
-`choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:TRUE /SETSINGLEDATABASE:FALSE"` <br>
-`choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:TRUE /SETSINGLEDATABASE:TRUE /SETDATABASEDIR:%AppData%\RSA"` <br>
+`choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:FALSE"` <br>
+`choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:FALSE /SETSINGLEDATABASE:FALSE"` <br>
+`choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:FALSE /SETSINGLEDATABASE:TRUE /SETDATABASEDIR:<DRIVE_LETTER>\<PATH>"` <br>
 
 ## Installation
 

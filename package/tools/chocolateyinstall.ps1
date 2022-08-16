@@ -11,6 +11,7 @@ $sa = ""
 $sa += if($pp.SETCOPYPROTECTION) { ' SETCOPYPROTECTION=' + $pp.SETCOPYPROTECTION}
 $sa += if($pp.SETSINGLEDATABASE) { ' SETSINGLEDATABASE=' + $pp.SETSINGLEDATABASE}
 $sa += if($pp.SETDATABASEDIR) { ' SETDATABASEDIR=' + $pp.SETDATABASEDIR}
+$sa += if($pp.SETROAMING) { ' SETROAMING=' + $pp.SETROAMING}
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName

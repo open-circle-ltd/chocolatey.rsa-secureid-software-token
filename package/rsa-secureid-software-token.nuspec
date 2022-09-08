@@ -21,11 +21,13 @@
       - `/SETCOPYPROTECTION:OPTION` to remove the binding of the token to the specific machine on which the token is imported; and thus to be able to find it on any other machine.
       - `/SETSINGLEDATABASE:OPTION` to remove the binding of the token to the specific user accessing the machine.  The installation is still secured as the token is stored in the home drive of each user and cannot be accessed by any other user.
       - `/SETDATABASEDIR:OPTION` to install the database containing the user’s software token to a location other than the default directory.
+      - '/SETROAMING:OPTION' for roaming users, like in terminal server environments.
 
       ### Examples
       `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:FALSE"`
       `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:FALSE /SETSINGLEDATABASE:FALSE"`
-      `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:FALSE /SETSINGLEDATABASE:TRUE /SETDATABASEDIR:<DRIVE_LETTER>\<PATH>"`
+      `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:FALSE /SETSINGLEDATABASE:FALSE /SETDATABASEDIR:<DRIVE_LETTER>\<PATH>"`
+      `choco install rsa-secureid-software-token --params "/SETCOPYPROTECTION:FALSE /SETSINGLEDATABASE:FALSE /SETDATABASEDIR:H:\RSA" /SETROAMING:TRUE`
 
     </description>
     <releaseNotes>https://community.securid.com/t5/securid-software-token-for/rsa-securid-software-token-5-0-3-for-microsoft-windows-release/ta-p/627168</releaseNotes>

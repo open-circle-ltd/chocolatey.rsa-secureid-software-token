@@ -5,9 +5,9 @@
     <version>5.0.3.3</version>
     <packageSourceUrl>https://github.com/open-circle-ltd/chocolatey.rsa-secureid-software-token</packageSourceUrl>
     <owners>Benaiah Matthew Catherasoo, Open Circle AG</owners>
-    <title>rsa-secureid-software-token</title>
+    <title>RSA SecurID Software Token</title>
     <authors>RSA Security LLC</authors>
-    <projectUrl>https://community.securid.com/</projectUrl>
+    <projectUrl>https://github.com/open-circle-ltd/chocolatey.rsa-secureid-software-token</projectUrl>
     <iconUrl>https://community.securid.com/html/assets/securid/securid-an-rsa-business-513x139.png</iconUrl>
     <copyright>2022 RSA Security LLC</copyright>
     <projectSourceUrl>https://community.securid.com/t5/securid-software-token-for/rsa-securid-software-token-5-0-2-downloads-for-microsoft-windows/ta-p/565936</projectSourceUrl>
